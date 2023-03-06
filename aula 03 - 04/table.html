@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo de tabela com checkboxes</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		th, td {
+			padding: 8px;
+			text-align: left;
+			border: 1px solid #ddd;
+		}
+		th {
+			background-color: #f2f2f2;
+		}
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+		input[type=checkbox] {
+			margin-right: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Exemplo de tabela com checkboxes</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Produto</th>
+				<th>Preço</th>
+				<th>Selecionar</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Camiseta branca</td>
+				<td>R$ 29,90</td>
+				<td><input type="checkbox" name="produto[]" value="camiseta-branca"></td>
+			</tr>
+			<tr>
+				<td>Camiseta preta</td>
+				<td>R$ 29,90</td>
+				<td><input type="checkbox" name="produto[]" value="camiseta-preta"></td>
+			</tr>
+			<tr>
+				<td>Calça jeans</td>
+				<td>R$ 79,90</td>
+				<td><input type="checkbox" name="produto[]" value="calca-jeans"></td>
+			</tr>
+			<tr>
+				<td>Tênis esportivo</td>
+				<td>R$ 99,90</td>
+				<td><input type="checkbox" name="produto[]" value="tenis-esportivo"></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

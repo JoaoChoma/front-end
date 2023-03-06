@@ -1,0 +1,33 @@
+Crie um formulário para cadastro de usuário contendo os seguintes campos: nome, sobrenome, e-mail, senha, confirmação de senha, gênero e data de nascimento.
+
+Crie uma lista de tarefas com 5 itens e use a tag <ul> para estruturá-la.
+
+Crie uma tabela com 3 colunas e 3 linhas e preencha cada célula com um número.
+
+Crie uma página web com um cabeçalho, um menu de navegação, um conteúdo principal e um rodapé.
+
+Crie um formulário de contato com os seguintes campos: nome, e-mail, telefone, mensagem e um botão de envio.
+
+Crie uma página de perfil de usuário com foto, nome, sobrenome, endereço, telefone, e-mail e uma breve descrição.
+
+Crie um formulário de login com os campos e-mail e senha.
+
+Crie uma página com uma imagem e um texto descrevendo a imagem. Use a tag <figure> para a imagem e alt para o texto descritivo.
+
+Crie uma lista de links para redes sociais.
+
+Crie uma página com um título, um subtítulo e um parágrafo de texto.
+
+Crie um formulário de busca com um campo de texto e um botão de envio.
+
+Crie uma lista de produtos com imagem, nome e preço.
+
+Crie uma tabela com 4 colunas e 5 linhas e preencha cada célula com uma letra do alfabeto.
+
+Crie uma página com um cabeçalho contendo o logotipo da empresa, um menu de navegação, um conteúdo principal com um texto e uma imagem, e um rodapé com informações de contato.
+
+Crie um formulário de inscrição em um evento com campos para nome, e-mail, telefone e escolha de atividades.
+
+Crie uma lista de compras com checkboxes para selecionar os itens desejados.
+
+Crie uma tabela com informações sobre diferentes países, incluindo nome, capital, idioma oficial e moeda.
