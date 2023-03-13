@@ -1,0 +1,10 @@
+Criar um layout de página com um header, um menu de navegação, um conteúdo principal e um footer.
+Criar uma tabela estilizada com CSS.
+Fazer um hover em botões com transição suave.
+Criar um formulário com diferentes tipos de inputs estilizados.
+Criar uma lista estilizada com CSS, com diferentes tipos de marcadores.
+Fazer um hover em imagens com efeito de escala e transição.
+Fazer um menu dropdown com CSS puro.
+Fazer um efeito de parallax com CSS.
+Criar um botão de scroll to top com CSS e JavaScript.
+Fazer uma animação de loading com CSS.
