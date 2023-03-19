@@ -1,156 +1,160 @@
 <html>
-    <head>
-        <style>
-            .menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  color: #fff;
-  height: 50px;
-  padding: 0 20px;
-}
 
-.menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+<head>
+  <style>
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      color: #fff;
+      height: 50px;
+      padding: 0 20px;
+    }
 
-.menu-esquerda li {
-  display: inline-block;
-  margin-right: 20px;
-}
+    .menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
 
-.menu-direita li {
-  display: inline-block;
-  margin-left: 20px;
-}
+    .menu-esquerda li {
+      display: inline-block;
+      margin-right: 20px;
+    }
 
-.menu a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
+    .menu-direita li {
+      display: inline-block;
+      margin-left: 20px;
+    }
 
-            footer {
-  background-color: #ccc;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+    .menu a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+    footer {
+      background-color: #ccc;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-ul li {
-  /*display: inline-block;*/
-  margin: 0 10px;
-}
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
 
-ul.left {
-  float: left;
-}
+    ul li {
+      /*display: inline-block;*/
+      margin: 0 10px;
+    }
 
-ul.center {
-  text-align: center;
-}
+    ul.left {
+      float: left;
+    }
 
-ul.right {
-  float: right;
-}
+    ul.center {
+      text-align: center;
+    }
 
-/* Estilo da seção de pizzas */
-.pizza-section {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 20px;
-      }
-      /* Estilo de cada pizza */
-      .pizza {
-        background-color: #F5F5F5;
-        border-radius: 10px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-        margin-bottom: 20px;
-        overflow: hidden;
-        width: 30%;
-      }
-      /* Estilo da imagem da pizza */
-      .pizza img {
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-      }
-      /* Estilo do nome da pizza */
-      .pizza h3 {
-        margin: 10px;
-        text-align: center;
-      }
-      /* Estilo da descrição da pizza */
-      .pizza p {
-        margin: 0 10px 10px;
-        text-align: justify;
-      }
-      /* Estilo do preço da pizza */
-      .pizza span {
-        display: block;
-        font-size: 24px;
-        font-weight: bold;
-        margin: 10px;
-        text-align: center;
-      }
+    ul.right {
+      float: right;
+    }
 
-        </style>
-    </head>
-    <body>
-        <nav class="menu">
-            <ul class="menu-esquerda">
-              <li><a href="#">Item 1</a></li>
-              <li><a href="#">Item 2</a></li>
-              <li><a href="#">Item 3</a></li>
-            </ul>
-            <figure id="logo">
-                <a href="#"><img alt="Logo" src="img/logo.png"></a>
-            </figure>
-            <ul class="menu-direita">
-              <li><a href="#">Item 4</a></li>
-              <li><a href="#">Item 5</a></li>
-              <li><a href="#">Item 6</a></li>
-            </ul>
-          </nav>
-        <section class="pizza-section">
-            <div class="pizza">
-              <img src="margherita.jpg" alt="Pizza Margherita">
-              <h3>Margherita</h3>
-              <p>Tomate pelado, mussarela de búfala e manjericão.</p>
-              <span>R$ 35,00</span>
-            </div>
-        </section>
-          <footer>
-            <ul class="left">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Sobre</a></li>
-              <li><a href="#">Contato</a></li>
-            </ul>
-            <ul class="center">
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Instagram</a></li>
-            </ul>
-            <ul class="right">
-              <li><a href="#">Termos de uso</a></li>
-              <li><a href="#">Política de privacidade</a></li>
-            </ul>
-          </footer>
-    </body>
+    /* Estilo da seção de pizzas */
+    .pizza-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    /* Estilo de cada pizza */
+    .pizza {
+      background-color: #F5F5F5;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+      overflow: hidden;
+      width: 30%;
+    }
+
+    /* Estilo da imagem da pizza */
+    .pizza img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    /* Estilo do nome da pizza */
+    .pizza h3 {
+      margin: 10px;
+      text-align: center;
+    }
+
+    /* Estilo da descrição da pizza */
+    .pizza p {
+      margin: 0 10px 10px;
+      text-align: justify;
+    }
+
+    /* Estilo do preço da pizza */
+    .pizza span {
+      display: block;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="menu">
+    <ul class="menu-esquerda">
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Item 2</a></li>
+      <li><a href="#">Item 3</a></li>
+    </ul>
+    <figure id="logo">
+      <a href="#"><img alt="Logo" src="img/logo.png"></a>
+    </figure>
+    <ul class="menu-direita">
+      <li><a href="#">Item 4</a></li>
+      <li><a href="#">Item 5</a></li>
+      <li><a href="#">Item 6</a></li>
+    </ul>
+  </nav>
+  <section class="pizza-section">
+    <div class="pizza">
+      <img src="margherita.jpg" alt="Pizza Margherita">
+      <h3>Margherita</h3>
+      <p>Tomate pelado, mussarela de búfala e manjericão.</p>
+      <span>R$ 35,00</span>
+    </div>
+  </section>
+  <footer>
+    <ul class="left">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+    <ul class="center">
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+    <ul class="right">
+      <li><a href="#">Termos de uso</a></li>
+      <li><a href="#">Política de privacidade</a></li>
+    </ul>
+  </footer>
+</body>
+
 </html>
-
-
-  
