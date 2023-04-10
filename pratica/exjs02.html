@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+ 	//Ler o preço do produto.
+ 	var preco = Number(prompt("Informe o preço do produto? R$: "));
+ 	/*
+ 	Cálculo das seguintes condições de pagamento:
+ 	1) Pagamento à vista com 20% de desconto; e
+ 	2) Pagamento à prazo em até 3x sem juros.
+ 	*/
+ 	var valorAVista = preco * 0.80;
+ 	var valorAPrazo = preco / 3;
+ 	//Respostas sendo apresentadas com o comando alert().
+ 	alert("Valor do Produto R$: " + preco.toFixed(2) + "\nTotal à vista R$: " 
+ + valorAVista.toFixed(2) + "\nTotal à prazo R$: " 
+ + valorAPrazo.toFixed(2));
+ </script>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+        <h1>Exemplo de Site com JavaScript</h1>
+        <p>Clique no botão abaixo para alterar o texto:</p>
+        <button id="botao">Clique aqui</button>
+        <p id="texto">Texto original</p>
+
+        <script>
+            let botao = document.getElementById("botao");
+            let texto = document.getElementById("texto");
+
+            botao.addEventListener("click", function () {
+                texto.textContent = "Novo texto";
+            });
+
+        </script>
+    </body>
+
+</body>
+
+</html>

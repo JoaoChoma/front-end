@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <style>
+        .todo-list {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        form {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            flex-grow: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+        }
+
+        button{
+            padding: 10px;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        label {
+            flex-grow: 1;
+            margin-left: 10px;
+        }
+
+        button.remover-tarefa {
+            margin-left: 10px;
+            padding: 5px 10px;
+            border: none;
+            background-color: #f44336;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="todo-list">
+        <h2>Minha lista de tarefas</h2>
+        <form>
+            <input type="text" placeholder="Adicionar tarefa">
+            <button>Adicionar</button>
+        </form>
+        <ul>
+            <li>
+                <input type="checkbox" id="tarefa1">
+                <label for="tarefa1">Fazer compras no mercado</label>
+                <button class="remover-tarefa">Remover</button>
+            </li>
+            <li>
+                <input type="checkbox" id="tarefa2">
+                <label for="tarefa2">Estudar para o exame</label>
+                <button class="remover-tarefa">Remover</button>
+            </li>
+            <li>
+                <input type="checkbox" id="tarefa3">
+                <label for="tarefa3">Limpar a casa</label>
+                <button class="remover-tarefa">Remover</button>
+            </li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>
