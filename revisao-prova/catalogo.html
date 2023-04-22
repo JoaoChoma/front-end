@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo de Produtos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 1rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 2rem;
+        }
+
+        .product {
+            margin: 2rem;
+            width: 30%;
+        }
+
+        .product h2 {
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+
+        .product img {
+            width: 100%;
+        }
+
+        .product p {
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Catálogo de Produtos</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product">
+            <h2>Produto 1</h2>
+            <img src="product1.jpg" alt="Produto 1" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Preço: R$ 100,00</p>
+            <button>Comprar</button>
+        </section>
+
+        <section class="product">
+            <h2>Produto 2</h2>
+            <img src="product2.jpg" alt="Produto 2" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Preço: R$ 50,00</p>
+            <button>Comprar</button>
+        </section>
+
+        <section class="product">
+            <h2>Produto 3</h2>
+            <img src="product3.jpg" alt="Produto 3" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Preço: R$ 200,00</p>
+            <button>Comprar</button>
+        </section>
+
+        <section class="product">
+            <h2>Produto 4</h2>
+            <img src="product4.jpg" alt="Produto 4" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Preço: R$ 150,00</p>
+            <button>Comprar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023, Catálogo de Produtos</p>
+    </footer>
+</body>
+
+</html>
