@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lição 6 - Exemplo 1 de Formulário com JavaScript.</title>
+</head>
+<body>
+	<h1>Informe a cidade que quer viajar?</h1>
+	<p>
+		Destino: <input type="text" id="destino">
+		<input type="button" value="Selecionar" onclick="selecionarViagem()"> </p>
+		<p id="resposta">
+	</p>
+	<script>
+		function selecionarViagem() {
+			var destino = document.getElementById("destino").value;
+			document.getElementById("resposta").innerHTML = "Seja bem vindo a " + destino;
+			}
+			var selecionar = document.getElementById("Selecionar");
+			selecionar.onclick = selecionarViagem;
+	</script>
+</body>
+</html>
