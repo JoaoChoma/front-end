@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soma de Números</title>
+  <script>
+    function calculateSum() {
+        let sum = 0;
+        number = parseInt(prompt("Digite um número (ou um número negativo para encerrar):"));
+
+        while (number >= 0) {
+            sum += number;
+            number = parseInt(prompt("Digite um número (ou um número negativo para encerrar):"));
+        }
+
+        document.getElementById("sumResult").textContent = `A soma dos números é: ${sum}`;
+    }
+  </script>
+</head>
+<body>
+  <h1>Soma de Números</h1>
+  <button onclick="calculateSum()">Adicionar</button>
+  <p id="sumResult"></p>
+</body>
+</html>
