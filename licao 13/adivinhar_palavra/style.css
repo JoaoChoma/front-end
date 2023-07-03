@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  #palavra-oculta {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 5px;
+  }
+  
+  button {
+    padding: 5px 10px;
+  }
+  
+  #tentativas p {
+    margin-bottom: 5px;
+  }
+  
+  #lista-tentativas {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #resultado {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
