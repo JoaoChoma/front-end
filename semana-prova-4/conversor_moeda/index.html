@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="currency-app">
+        <h2>Conversor de Moedas</h2>
+        <input type="number" id="amountInput">
+        <select id="fromCurrency">
+            <option value="USD">USD (Dólar Americano)</option>
+            <option value="EUR">EUR (Euro)</option>
+            <option value="JPY">JPY (Iene Japonês)</option>
+            <!-- Adicione mais opções de moedas conforme necessário -->
+        </select>
+        <select id="toCurrency">
+            <option value="BRL">BRL (Real Brasileiro)</option>
+            <option value="GBP">GBP (Libra Esterlina)</option>
+            <option value="CAD">CAD (Dólar Canadense)</option>
+            <!-- Adicione mais opções de moedas conforme necessário -->
+        </select>
+        <button onclick="convertCurrency()">Converter</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
