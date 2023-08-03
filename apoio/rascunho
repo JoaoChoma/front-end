@@ -1,0 +1,154 @@
+A API do IBGE (Instituto Brasileiro de Geografia e Estatística) para nomes possui diferentes formas de consulta para obter informações relacionadas a nomes próprios utilizados no Brasil. Abaixo estão as principais formas de consulta disponíveis na API:
+
+1. Consulta por nome exato:
+   Você pode pesquisar informações sobre um nome específico fornecendo o parâmetro "nome" na URL da API. Por exemplo:
+   ```
+   GET https://servicodados.ibge.gov.br/api/v2/nomes/Paulo?versao=2
+   ```
+   Essa consulta retornará informações sobre todas as ocorrências do nome "Paulo" registradas no banco de dados do IBGE.
+
+2. Consulta por nome aproximado:
+   A API permite fazer consultas por nomes que contenham uma determinada sequência de caracteres, usando o parâmetro "q" na URL. Por exemplo:
+   ```
+   GET https://servicodados.ibge.gov.br/api/v2/nomes?q=Mari&versao=2
+   ```
+   Essa consulta retornará informações sobre nomes que contenham "Mari", como "Mariana", "Mário", "Marina", entre outros.
+
+3. Consulta por ranking de nomes:
+   Para obter os nomes mais populares em um determinado ano ou década, você pode usar a consulta por ranking, especificando o parâmetro "ranking" e o ano ou década desejado. Por exemplo:
+   ```
+   GET https://servicodados.ibge.gov.br/api/v2/nomes/ranking?q=1990&versao=2
+   ```
+   Essa consulta retornará os nomes mais populares na década de 1990.
+
+4. Consulta por período de anos:
+   É possível obter informações sobre um nome em um intervalo de anos, utilizando os parâmetros "periodoInicio" e "periodoFim". Por exemplo:
+   ```
+   GET https://servicodados.ibge.gov.br/api/v2/nomes/Maria?periodoInicio=2000&periodoFim=2010&versao=2
+   ```
+   Essa consulta retornará informações sobre o nome "Maria" entre os anos 2000 e 2010.
+
+5. Consulta por Unidade Federativa (UF):
+   A API permite pesquisar nomes mais populares em uma UF específica, utilizando o parâmetro "localidade" seguido da sigla da UF desejada. Por exemplo:
+   ```
+   GET https://servicodados.ibge.gov.br/api/v2/nomes/Maria?localidade=SP&versao=2
+   ```
+   Essa consulta retornará informações sobre o nome "Maria" no estado de São Paulo.
+
+Essas são algumas das principais formas de consulta disponíveis na API de nomes do IBGE. Para cada consulta, você pode obter informações detalhadas sobre a frequência do nome em diferentes anos, a quantidade de pessoas com esse nome, entre outros dados estatísticos relacionados. Lembre-se de ler a documentação oficial da API para obter mais detalhes sobre os parâmetros disponíveis e os dados retornados.
+
+------
+
+Na API de nomes do IBGE, você pode filtrar a consulta usando os seguintes tipos de parâmetros:
+
+1. `nome`: Utilizado para pesquisar informações sobre um nome específico. Com esse parâmetro, você pode obter dados estatísticos sobre um nome específico, como a frequência em diferentes anos e a quantidade de pessoas com esse nome.
+
+2. `q`: Permite fazer consultas por nomes que contenham uma determinada sequência de caracteres. É útil quando você deseja encontrar nomes similares ou nomes que contenham uma parte específica.
+
+3. `ranking`: Usado para obter os nomes mais populares em um determinado ano ou década. Você pode especificar o ano ou a década desejada para obter o ranking dos nomes mais comuns nesse período.
+
+4. `periodoInicio`: Permite pesquisar informações sobre um nome em um intervalo de anos. Você pode especificar o ano de início do período.
+
+5. `periodoFim`: Combinado com o `periodoInicio`, permite definir o ano de término do intervalo de anos para pesquisa.
+
+6. `localidade`: Utilizado para pesquisar nomes mais populares em uma Unidade Federativa (UF) específica. Você deve fornecer a sigla da UF desejada para realizar essa consulta.
+
+Esses são os principais tipos de parâmetros disponíveis para filtrar as consultas na API de nomes do IBGE. Cada parâmetro tem uma função específica e permite que você obtenha informações relevantes sobre os nomes utilizados no Brasil ao longo do tempo e em diferentes regiões. Lembre-se de consultar a documentação oficial da API para obter mais detalhes sobre o uso correto de cada parâmetro e as respostas esperadas.
+
+----
+
+Para usar a busca por frequência do nome na API de nomes do IBGE, você precisa realizar uma consulta usando o parâmetro "nome" seguido do nome específico que deseja pesquisar. A resposta da API fornecerá informações sobre a frequência desse nome ao longo dos anos.
+
+Aqui está um exemplo de como fazer a consulta usando uma requisição HTTP GET:
+
+```
+GET https://servicodados.ibge.gov.br/api/v2/nomes/{NOME}?versao=2
+```
+
+Substitua `{NOME}` pelo nome que você deseja pesquisar. Por exemplo, se você quiser pesquisar a frequência do nome "Maria", a consulta ficaria assim:
+
+```
+GET https://servicodados.ibge.gov.br/api/v2/nomes/Maria?versao=2
+```
+
+A resposta da API será um JSON contendo informações sobre a frequência do nome "Maria" ao longo dos anos. O JSON terá a seguinte estrutura:
+
+```json
+{
+  "nome": "Maria",
+  "res": [
+    {
+      "periodo": "1930",
+      "frequencia": 312600
+    },
+    {
+      "periodo": "1940",
+      "frequencia": 394370
+    },
+    {
+      "periodo": "1950",
+      "frequencia": 442140
+    },
+    ...
+  ]
+}
+```
+
+Cada objeto no array `res` representa um ano específico (ou período) e a frequência do nome nesse ano. O campo `periodo` contém o ano em formato de texto, e o campo `frequencia` contém o número de ocorrências do nome nesse ano.
+
+----
+
+estruturas de retorno
+
+1. Consulta por nome exato ou consulta por nome aproximado:
+   ```json
+   {
+     "nome": "Nome pesquisado",
+     "res": [
+       {
+         "periodo": "Ano",
+         "frequencia": Número_de_Ocorrencias
+       },
+       {
+         "periodo": "Ano",
+         "frequencia": Número_de_Ocorrencias
+       },
+       ...
+     ]
+   }
+   ```
+
+2. Consulta por ranking de nomes:
+   ```json
+   {
+     "ranking": [
+       {
+         "nome": "Nome",
+         "frequencia": Número_de_Ocorrencias
+       },
+       {
+         "nome": "Nome",
+         "frequencia": Número_de_Ocorrencias
+       },
+       ...
+     ]
+   }
+   ```
+
+3. Consulta por período de anos:
+   ```json
+   {
+     "nome": "Nome pesquisado",
+     "res": [
+       {
+         "periodo": "Ano",
+         "frequencia": Número_de_Ocorrencias
+       },
+       {
+         "periodo": "Ano",
+         "frequencia": Número_de_Ocorrencias
+       },
+       ...
+     ]
+   }
+   ```
