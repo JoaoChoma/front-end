@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aplicativo de Lista de Tarefas</title>
+</head>
+<body>
+  <h1>Lista de Tarefas</h1>
+  <input type="text" id="novaTarefa" placeholder="Digite uma nova tarefa">
+  <button id="adicionarTarefa">Adicionar Tarefa</button>
+  <ul id="listaTarefas"></ul>
+
+  <script type="module">
+    import criarModelo from 'model.js';
+    import criarVisualizacao from 'view.js';
+    import criarControlador from 'controller.js';
+
+    const modelo = criarModelo();
+    const visualizacao = criarVisualizacao();
+    const controlador = criarControlador(modelo, visualizacao);
+
+    document.getElementById('adicionarTarefa').addEventListener('click', () => {
+      controlador.adicionarTarefa();
+    });
+
+    // Inicializa a visualização com as tarefas atuais
+    visualizacao.atualizarLista(modelo.obterTarefas());
+  </script>
+</body>
+</html>
