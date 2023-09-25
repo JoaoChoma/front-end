@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        #paragrafo {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+    <title>Funções Anônimas</title>
+</head>
+
+<body>
+    <button id="botao">Clique para Alterar o Texto</button>
+    <p id="paragrafo">Este é um parágrafo de exemplo.</p>
+    <script>
+        // Adicionando um evento de clique ao botão e usando uma função anônima
+        document.getElementById("botao").addEventListener("click", function () {
+            // Selecionando o elemento de parágrafo
+            const paragrafo = document.getElementById("paragrafo");
+
+            // Alterando o texto do parágrafo
+            paragrafo.textContent = "O texto foi alterado por uma função anônima!";
+        });
+
+    </script>
+</body>
+
+</html>

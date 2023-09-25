@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        #resultado {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+    <title>Funções com Parâmetros</title>
+</head>
+
+<body>
+    <input type="number" id="numero1" placeholder="Digite o primeiro número">
+    <input type="number" id="numero2" placeholder="Digite o segundo número">
+    <button id="botao">Calcular Soma</button>
+    <p id="resultado"></p>
+    <script>
+        // Função que recebe dois parâmetros e retorna a soma deles
+        function calcularSoma(numero1, numero2) {
+            return numero1 + numero2;
+        }
+
+        // Adicionando um evento de clique ao botão para chamar a função com parâmetros
+        document.getElementById("botao").addEventListener("click", function () {
+            const numero1 = parseFloat(document.getElementById("numero1").value);
+            const numero2 = parseFloat(document.getElementById("numero2").value);
+
+            if (!isNaN(numero1) && !isNaN(numero2)) {
+                const resultado = calcularSoma(numero1, numero2);
+                document.getElementById("resultado").textContent = `A soma é: ${resultado}`;
+            } else {
+                document.getElementById("resultado").textContent = "Por favor, insira números válidos.";
+            }
+        });
+
+    </script>
+</body>
+
+</html>
