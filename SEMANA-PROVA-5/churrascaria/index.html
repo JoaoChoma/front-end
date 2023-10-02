@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Churrascaria - Controle de Pedidos</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Churrascaria</h1>
+    </header>
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <ul>
+                <!-- Itens do menu (exemplo) -->
+                <li>
+                    <span>Carne de boi</span>
+                    <button class="add-item" onclick="adicionarItemAoPedido('Carne de boi', 20.99)">Adicionar</button>
+                </li>
+                <li>
+                    <span>Frango assado</span>
+                    <button class="add-item" onclick="adicionarItemAoPedido('Frango assado', 15.99)">Adicionar</button>
+                </li>
+                <li>
+                    <span>Cerveja</span>
+                    <button class="add-item" onclick="adicionarItemAoPedido('Cerveja', 5.99)">Adicionar</button>
+                </li>
+                <li>
+                    <span>Vinho tinto</span>
+                    <button class="add-item" onclick="adicionarItemAoPedido('Vinho tinto', 12.99)">Adicionar</button>
+                </li>
+            </ul>
+        </section>
+        <section id="pedido">
+            <h2>Pedido do Cliente</h2>
+            <ul id="pedido-lista">
+                <!-- Itens do pedido do cliente serão adicionados dinamicamente pelo JavaScript -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <h2>Mensagem do Pedido</h2>
+        
+        <p id="numero-pedido"></p>  
+        <p id="pedido-mensagem">Nenhum pedido realizado.</p>
+        <p id="total-pedido">Total: R$ 0.00</p>
+        <button id="fechar-pedido" onclick="fecharPedido()">Fechar Pedido</button>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
