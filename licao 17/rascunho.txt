@@ -7,3 +7,12 @@ Na função "return", estamos exibindo os dados na página usando um elemento "u
 Agora, se você executar o projeto, deverá ver uma lista de títulos de posts sendo exibida na página.
 
 Esse é um exemplo simples de como fazer uma requisição assíncrona em React usando a biblioteca "axios". Claro que existem muitas outras formas de fazer isso e muitas outras bibliotecas que podem ser utilizadas, mas espero que este exemplo ajude a entender o conceito básico.
+
+
+https://codesandbox.io/s/codigo-l17-j5v3wy
+
+https://pt-br.react.dev/
+
+https://codesandbox.io/s/codigo-l17-j5v3wy?file=/src/App.js
+
+https://codesandbox.io/s/login-ts6dfx
