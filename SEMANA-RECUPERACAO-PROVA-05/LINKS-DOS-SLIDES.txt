@@ -1,0 +1,21 @@
+LINKS DOS SLIDES
+
+
+https://pt-br.react.dev/
+
+CODESANDBOX
+
+https://codesandbox.io/
+
+PROJETO EM BRANCO
+
+https://codesandbox.io/s/projeto-em-branco-3f67pk
+
+PROJETO LOGIN
+https://codesandbox.io/s/login-ts6dfx
+
+PROJETO CONSULTA JSON
+https://codesandbox.io/s/codigo-l17-j5v3wy
+
+PROJETO TODO
+https://codesandbox.io/s/lista-z5rvvq

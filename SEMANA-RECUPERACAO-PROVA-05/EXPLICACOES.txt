@@ -1,0 +1,40 @@
+Esse código é um componente React chamado `TodoList`, que representa uma lista de tarefas em uma aplicação. Vou explicar as principais partes do código:
+
+1. Importações:
+   - `React` e `useState` são importados do módulo "react".
+   - `TodoItem` é importado de um arquivo chamado "TodoItem".
+
+2. Função `TodoList`:
+   - Define um componente funcional chamado `TodoList`.
+   - Usa o `useState` para criar dois estados: `todos` e `task`. O estado `todos` é usado para armazenar a lista de tarefas, e o estado `task` é usado para armazenar a tarefa que está sendo digitada pelo usuário.
+
+3. Função `addTodo`:
+   - É uma função que é chamada quando o botão "Adicionar" é clicado.
+   - Verifica se a string em `task` não está vazia e, se não estiver, adiciona a tarefa ao array `todos` e redefine o estado `task` como uma string vazia para limpar o campo de entrada.
+
+4. Função `removeTodo`:
+   - É uma função que é chamada quando um item da lista de tarefas é removido.
+   - Recebe um índice como parâmetro e cria uma nova lista `newTodos` que exclui o elemento com o índice correspondente da lista `todos`. Em seguida, atualiza o estado `todos` com a nova lista, removendo assim o item da lista de tarefas.
+
+5. Renderização do componente:
+   - Renderiza uma estrutura HTML que inclui um título "Lista de Tarefas", um campo de entrada de texto para adicionar tarefas, um botão "Adicionar" que chama a função `addTodo` quando clicado e uma lista não ordenada (`<ul>`) para exibir as tarefas.
+   - Usa a função `map` para mapear cada item da lista `todos` em elementos `TodoItem`. Cada `TodoItem` recebe uma chave única (`key`) com base no seu índice na lista, o texto da tarefa (`todo`) e a função `removeTodo` que deve ser chamada quando o item for removido.
+
+O componente `TodoList` é um exemplo simples de uma aplicação de lista de tarefas em React, onde os estados são usados para gerenciar as tarefas e as interações do usuário são controladas através das funções `addTodo` e `removeTodo`. Cada tarefa é representada como um componente `TodoItem`, que pode ser removido quando o botão correspondente é clicado.
+
+Este código é um componente React chamado `TodoItem`. Ele representa um item individual em uma lista de tarefas. Vamos explicar as partes do código:
+
+1. **Importações**:
+   - O código importa o módulo `React` para criar componentes React.
+
+2. **Função `TodoItem`**:
+   - `TodoItem` é um componente funcional que recebe duas propriedades como parâmetros: `todo` e `onRemove`.
+   - Dentro do componente, ele renderiza o texto da tarefa (`todo`) dentro de um elemento `<li>` (item de lista) e um botão "Remover" ao lado.
+
+3. **Evento de clique**:
+   - O botão "Remover" tem um evento `onClick` que chama a função `onRemove` quando clicado. Essa função é passada como uma propriedade e deve ser fornecida pelo componente pai (no caso, `TodoList`) para lidar com a remoção deste item específico.
+
+4. **Exportação**:
+   - O componente `TodoItem` é exportado no final do arquivo para que possa ser importado e usado em outros componentes, como é feito no componente `TodoList`, onde ele é renderizado para representar cada item na lista de tarefas.
+
+Em resumo, o `TodoItem` é um componente React simples que recebe uma tarefa e uma função para remover essa tarefa como propriedades. Quando renderizado, exibe a tarefa e um botão "Remover" que chama a função de remoção quando clicado. É um componente reutilizável que pode ser usado em uma lista de tarefas para exibir cada item na lista.
