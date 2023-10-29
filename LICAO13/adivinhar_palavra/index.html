@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jogo de Adivinhação</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Jogo de Adivinhação</h1>
+
+  <div id="palavra-oculta"></div>
+
+  <div>
+    <label for="letra-input">Digite uma letra:</label>
+    <input type="text" id="letra-input">
+    <button onclick="verificarLetra()">Verificar</button>
+  </div>
+
+  <div id="tentativas">
+    <p>Tentativas:</p>
+    <ul id="lista-tentativas"></ul>
+  </div>
+
+  <div id="resultado"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

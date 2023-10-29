@@ -1,0 +1,18 @@
+Nesse código, estamos usando os hooks "useState" e "useEffect" para armazenar os dados da requisição e fazer a chamada à API, respectivamente.
+
+Na função "useEffect", estamos chamando a função "fetchData" que faz a requisição à API usando o método "axios.get". Quando a requisição é concluída, os dados são armazenados no estado "data" usando a função "setData".
+
+Na função "return", estamos exibindo os dados na página usando um elemento "ul" e um laço "map" para percorrer o array de dados e criar um elemento "li" para cada item.
+
+Agora, se você executar o projeto, deverá ver uma lista de títulos de posts sendo exibida na página.
+
+Esse é um exemplo simples de como fazer uma requisição assíncrona em React usando a biblioteca "axios". Claro que existem muitas outras formas de fazer isso e muitas outras bibliotecas que podem ser utilizadas, mas espero que este exemplo ajude a entender o conceito básico.
+
+
+https://codesandbox.io/s/codigo-l17-j5v3wy
+
+https://pt-br.react.dev/
+
+https://codesandbox.io/s/codigo-l17-j5v3wy?file=/src/App.js
+
+https://codesandbox.io/s/login-ts6dfx
